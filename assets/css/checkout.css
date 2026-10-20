@@ -1,0 +1,31 @@
+/* 2-Column Shopify-Style Layout */
+@media (min-width: 992px) {
+  form.checkout.woocommerce-checkout {
+    display: grid !important;
+    grid-template-columns: 1fr 420px;
+    gap: 48px;
+    align-items: start;
+  }
+  #customer_details {
+    width: 100% !important;
+    float: none !important;
+  }
+  #order_review_heading,
+  #order_review {
+    width: 100% !important;
+    float: none !important;
+    background: #fbfbfb;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 24px;
+    position: sticky;
+    top: 32px;
+  }
+}
+.wssec-field input {
+  height: 54px !important;
+  border-radius: 6px !important;
+  border: 1px solid #d1d5db !important;
+  padding: 0 16px !important;
+  font-size: 15px !important;
+}
