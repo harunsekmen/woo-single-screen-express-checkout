@@ -1,31 +1,71 @@
-/* 2-Column Shopify-Style Layout */
+/* Single-Screen 2-Column Desktop Grid */
 @media (min-width: 992px) {
   form.checkout.woocommerce-checkout {
     display: grid !important;
-    grid-template-columns: 1fr 420px;
-    gap: 48px;
-    align-items: start;
+    grid-template-columns: 1fr 440px !important;
+    gap: 48px !important;
+    align-items: start !important;
   }
-  #customer_details {
-    width: 100% !important;
-    float: none !important;
-  }
-  #order_review_heading,
+  #customer_details { width: 100% !important; float: none !important; }
+  #order_review_heading { display: none; }
   #order_review {
     width: 100% !important;
     float: none !important;
     background: #fbfbfb;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #e5e7eb;
     border-radius: 8px;
     padding: 24px;
     position: sticky;
-    top: 32px;
+    top: 24px;
   }
 }
-.wssec-field input {
-  height: 54px !important;
+
+.wssec-express-container { margin-bottom: 24px; text-align: center; }
+.wssec-express-label { font-size: 13px; font-weight: 600; text-transform: uppercase; color: #4b5563; margin-bottom: 12px; }
+.wssec-divider-line {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+.wssec-divider-line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e5e7eb;
+}
+.wssec-divider-line span {
+  position: relative;
+  background: #fff;
+  padding: 0 16px;
+  font-size: 12px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+.wssec-input-field input,
+.wssec-input-field select {
+  height: 52px !important;
   border-radius: 6px !important;
   border: 1px solid #d1d5db !important;
   padding: 0 16px !important;
   font-size: 15px !important;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.wssec-input-field input:focus,
+.wssec-input-field select:focus {
+  border-color: #111827 !important;
+  box-shadow: 0 0 0 3px rgba(17,24,39,0.1) !important;
+  outline: none !important;
+}
+.wssec-trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  color: #6b7280;
 }

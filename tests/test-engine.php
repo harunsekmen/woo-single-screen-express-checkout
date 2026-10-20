@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/bootstrap.php';
-
 require_once dirname(__DIR__) . '/includes/class-checkout-engine.php';
 
 echo "Testing Woo_Single_Screen_Checkout_Engine...
@@ -16,7 +15,7 @@ $sample = [
         'billing_email' => ['label' => 'Email']
     ]
 ];
-$res = $engine->optimize_checkout_fields($sample);
+$res = $engine->filter_checkout_fields($sample);
 assert(is_array($res), "Result must be array");
 echo "PASS: Woo_Single_Screen_Checkout_Engine verified.
 ";
