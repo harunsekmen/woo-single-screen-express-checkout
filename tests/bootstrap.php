@@ -16,3 +16,5 @@ if (!function_exists('wc_price')) { function wc_price($p) { return '$' . number_
 if (!function_exists('get_transient')) { function get_transient($k) { return false; } }
 if (!function_exists('set_transient')) { function set_transient($k, $v, $e = 0) { return true; } }
 if (!function_exists('wp_generate_password')) { function wp_generate_password($len = 12) { return bin2hex(random_bytes((int)($len / 2))); } }
+
+if (!function_exists('absint')) { function absint($m) { return abs((int)$m); } }
