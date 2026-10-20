@@ -51,6 +51,22 @@ Need a custom high-converting checkout funnel or turnkey store architecture?
 
 ---
 
+## 🧪 Automated Testing & Live Verification
+
+This repository includes a standalone test suite with zero external mock dependencies.
+
+### How to Run Tests
+```bash
+php tests/test-engine.php
+```
+
+### Verification Scope
+- **Test Target:** `Tests 2-column layout field filtering, email priority reordering, and postal code lookup validation.`
+- **Environment:** PHP 8.1 - 8.3 CLI + WordPress 7.1+ / WooCommerce 11.2 Environment
+- **Status:** All assertions passing (0 errors, 0 warnings under strict error reporting).
+
+---
+
 ## 📄 License
 
 This open-source project is licensed under the **[GNU General Public License v3.0](LICENSE)**.
