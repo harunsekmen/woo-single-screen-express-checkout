@@ -23,3 +23,5 @@ add_action('before_woocommerce_init', function () {
 require_once __DIR__ . '/includes/class-checkout-engine.php';
 
 add_action('plugins_loaded', ['Woo_Single_Screen_Checkout_Engine', 'instance']);
+
+require_once __DIR__ . '/includes/class-admin.php';
